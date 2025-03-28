@@ -67,7 +67,7 @@
 <meta property="og:image" content="http://example.com/images/image-20250326214745353.png">
 <meta property="og:image" content="http://example.com/images/image-20250326220049175.png">
 <meta property="article:published_time" content="2025-03-24T11:13:29.000Z">
-<meta property="article:modified_time" content="2025-03-28T17:29:16.141Z">
+<meta property="article:modified_time" content="2025-03-28T17:31:44.205Z">
 <meta property="article:author" content="NAWHST">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/images/flag1.jpg">
@@ -263,7 +263,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.3k 字
+          3.4k 字
         
       </span>
     
@@ -518,6 +518,9 @@
 
 <p>也可以一个个查</p>
 <figure class="highlight twig"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs twig"><span class="language-xml">当前类      </span><span class="hljs-template-tag">&#123;%</span><span class="hljs-name">print</span>(<span class="hljs-string">&quot;&quot;</span><span class="hljs-punctuation">|</span>attr(<span class="hljs-string">&quot;__c&quot;</span><span class="hljs-string">&quot;lass__&quot;</span>))<span class="hljs-template-tag">%&#125;</span><span class="language-xml"></span><br><span class="language-xml">基类        </span><span class="hljs-template-tag">&#123;%</span><span class="hljs-name">print</span>(<span class="hljs-string">&quot;&quot;</span><span class="hljs-punctuation">|</span>attr(<span class="hljs-string">&quot;__c&quot;</span><span class="hljs-string">&quot;lass__&quot;</span>)<span class="hljs-punctuation">|</span>attr(<span class="hljs-string">&quot;__b&quot;</span><span class="hljs-string">&quot;ase__&quot;</span>))<span class="hljs-template-tag">%&#125;</span><span class="language-xml"></span><br><span class="language-xml">基类的子类   </span><span class="hljs-template-tag">&#123;%</span><span class="hljs-name">print</span>(<span class="hljs-string">&quot;&quot;</span><span class="hljs-punctuation">|</span>attr(<span class="hljs-string">&quot;__c&quot;</span><span class="hljs-string">&quot;lass__&quot;</span>)<span class="hljs-punctuation">|</span>attr(<span class="hljs-string">&quot;__b&quot;</span><span class="hljs-string">&quot;ase__&quot;</span>)<span class="hljs-punctuation">|</span>attr(<span class="hljs-string">&quot;__subc&quot;</span><span class="hljs-string">&quot;lasses__&quot;</span>)())<span class="hljs-template-tag">%&#125;</span><br></code></pre></td></tr></table></figure>
+
+<p>然后写脚本获取下标</p>
+<figure class="highlight twig"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs twig"><span class="hljs-template-tag">&#123;%</span><span class="hljs-name">print</span>(<span class="hljs-string">&#x27;&#x27;</span><span class="hljs-punctuation">|</span>attr(<span class="hljs-string">&#x27;__cla&#x27;</span><span class="hljs-string">&#x27;ss__&#x27;</span>)<span class="hljs-punctuation">|</span>attr(<span class="hljs-string">&#x27;__ba&#x27;</span><span class="hljs-string">&#x27;se__&#x27;</span>)<span class="hljs-punctuation">|</span>attr(<span class="hljs-string">&#x27;__subcla&#x27;</span><span class="hljs-string">&#x27;sses__&#x27;</span>)()<span class="hljs-punctuation">|</span>attr(<span class="hljs-string">&#x27;po&#x27;</span><span class="hljs-string">&#x27;p&#x27;</span>)(<span class="hljs-number">140</span>)<span class="hljs-punctuation">|</span>attr(<span class="hljs-string">&#x27;__in&#x27;</span><span class="hljs-string">&#x27;it__&#x27;</span>)<span class="hljs-punctuation">|</span>attr(<span class="hljs-string">&#x27;__glob&#x27;</span><span class="hljs-string">&#x27;als__&#x27;</span>)<span class="hljs-punctuation">|</span>attr(<span class="hljs-string">&#x27;po&#x27;</span><span class="hljs-string">&#x27;p&#x27;</span>)(<span class="hljs-string">&#x27;po&#x27;</span><span class="hljs-string">&#x27;p&#x27;</span><span class="hljs-string">&#x27;en&#x27;</span>)(<span class="hljs-string">&#x27;env|ba&#x27;</span><span class="hljs-string">&#x27;se64&#x27;</span>)<span class="hljs-punctuation">|</span>attr(<span class="hljs-string">&#x27;re&#x27;</span><span class="hljs-string">&#x27;ad&#x27;</span>)())<span class="hljs-template-tag">%&#125;</span><br></code></pre></td></tr></table></figure>
 
 
 
